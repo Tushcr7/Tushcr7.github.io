@@ -40,8 +40,8 @@ html {
 	--primary-2: #606066;
 	--secondary: #FFFFFF;
 	--accent: #1cac40;
-	--is: #008BDC;
-	--dyt: #F02486;
+	--is: #EC1A3B;
+	--dyt: #17B890;
 	--ncs: #FA820A;
 	--cryp: #3B55A5;
 	scroll-behavior: smooth;
@@ -399,22 +399,22 @@ section {
 		color: white;
 	}
 
-#proj-is {
-	background: url(../images/img-is.png) var(--is) no-repeat;
+#proj-p1 {
+	background: url(../images/img-pay1.png) var(--is) no-repeat;
 	background-size: cover;
-	box-shadow: 0 8px 24px 0 rgba(0, 139, 220, 0.4);
+	box-shadow: 0 8px 24px 0 rgba(236, 26, 59, 0.4);
 }
-	#proj-is:hover {
-		box-shadow: 0 8px 32px 0 rgba(0, 139, 220, 0.6);
+	#proj-p1:hover {
+		box-shadow: 0 8px 32px 0 rgba(236, 26, 59, 0.6);
 	}
 
-#proj-dyt {
-	background: url(../images/img-dyt.png) var(--dyt) no-repeat;
+#proj-gf {
+	background: url(../images/img-gf.png) var(--dyt) no-repeat;
 	background-size: cover;
-	box-shadow: 0 8px 24px 0 rgba(255, 37, 114, 0.4);
+	box-shadow: 0 8px 24px 0 rgba(23, 184, 144, 0.4);
 }
-	#proj-dyt:hover {
-		box-shadow: 0 8px 32px 0 rgba(255, 37, 114, 0.6);
+	#proj-gf:hover {
+		box-shadow: 0 8px 32px 0 rgba(23, 184, 144, 0.6);
 	}
 
 #proj-ncs {
@@ -457,9 +457,9 @@ section {
 	}
 
 .btn {
-	margin-top: 2.5rem;
+	margin-top: 3.5rem;
 	font-weight: 500;
-	padding: 0.75rem 2.5rem 1rem;
+	padding: 0.75rem 2.5rem;
 	border-radius: 4px;
 	color: var(--secondary);
 	background-color: var(--primary-1);
@@ -608,7 +608,7 @@ section {
 	border-bottom: 1px dotted var(--is);
 }
 	#modal-is a.link:hover {
-		box-shadow: inset 0 -0.4em 0 rgba(0, 139, 220, 0.32);
+		box-shadow: inset 0 -0.4em 0 rgba(236, 26, 59, 0.32);
 	}
 
 #modal-dyt a.link {
@@ -616,7 +616,7 @@ section {
 	border-bottom: 1px dotted var(--dyt);
 }
 	#modal-dyt a.link:hover {
-		box-shadow: inset 0 -0.4em 0 rgba(240, 36, 134, 0.32);
+		box-shadow: inset 0 -0.4em 0 rgba(23, 184, 144, 0.32);
 	}
 
 #modal-ncs a.link {
@@ -634,5 +634,37 @@ section {
 	#modal-cryp a.link:hover {
 		box-shadow: inset 0 -0.4em 0 rgba(59, 85, 165, 0.32);
 	}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+	
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: auto;
+	background-color: #555;
+	color: #fff;
+	text-align: center;
+	border-radius: 4px;
+	padding: 5%;
+	position: absolute;
+	z-index: 1;
+	bottom: 50%;
+	opacity: 0;
+	transition: opacity 0.3s;
+	font-size: 0.8rem;
+}
+	
+.tooltip .tooltiptext::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #555 transparent transparent transparent;
+}
 
 /* Fin. 

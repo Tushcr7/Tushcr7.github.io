@@ -65,3 +65,20 @@ function scrollFunction() {
 		topScroll.style.display = "none";
 	}
 }
+
+function copyEmail() {
+	navigator.clipboard.writeText("k7tushar@gmail.com");
+
+	var tooltip = document.getElementById("myTooltip");
+	tooltip.innerHTML = "Email Address copied to clipboard.";
+	tooltip.style.display = "block";
+	tooltip.style.visibility = "visible";
+	tooltip.style.opacity = 1;
+}
+
+function outFunc() {
+	var tooltip = document.getElementById("myTooltip");
+	tooltip.style.display = "none";
+	tooltip.style.visibility = "hidden";
+	tooltip.style.opacity = 0;
+}

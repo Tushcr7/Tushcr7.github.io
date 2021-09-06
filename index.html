@@ -71,20 +71,20 @@
 	<!-- Projects section -->
 	<section id="projects">
 
-		<h2 class="heading">Projects - Coming soon</h2>
+		<h2 class="heading">Projects</h2>
 
-		<!-- <div class="proj-container">
-			<a href="#" data-modal="modal-is" alt="Internshala" class="proj-box" id="proj-is">
-				<h3>Internshala</h3>
-				<h5>App Design · Design System</h5>
+		<div class="proj-container">
+			<a href="#" data-modal="modal-is" alt="Pay1" class="proj-box" id="proj-p1">
+				<h3>Pay1</h3>
+				<h5>UI/UX Design · Design System</h5>
 			</a>
 
-			<a href="#" data-modal="modal-dyt" alt="Do Your Thng" class="proj-box" id="proj-dyt">
-				<h3>Do Your Thng</h3>
-				<h5>Product Design · Design System</h5>
+			<a href="#" data-modal="modal-dyt" alt="GroupFit" class="proj-box" id="proj-gf">
+				<h3>GroupFit</h3>
+				<h5>Product Design · Hackathon</h5>
 			</a>
 
-			<a href="#" data-modal="modal-ncs" alt="Nibble Computer Society" class="proj-box" id="proj-ncs">
+			<!-- <a href="#" data-modal="modal-ncs" alt="Nibble Computer Society" class="proj-box" id="proj-ncs">
 				<h3>Nibble Computer Society</h3>
 				<h5>UI/UX Design · Brand Strategy</h5>
 			</a>
@@ -92,8 +92,8 @@
 			<a href="#" data-modal="modal-cryp" alt="Cryptorai" class="proj-box" id="proj-cryp">
 				<h3>Cryptorai Inc.</h3>
 				<h5>UI/UX Design</h5>
-			</a>
-		</div> -->
+			</a> -->
+		</div>
 	</section>
 
 	<!-- About section -->
@@ -114,7 +114,10 @@
 		<h2 class="heading">Contact</h2>
 
 		<p>Interested in getting in touch?</p>
-		<a class="btn mail" href="mailto:k7tushar@gmail.com">Email me</a>
+		<div class="tooltip">
+			<span class="tooltiptext" id="myTooltip" style="display: none;"></span>
+			<div class="btn mail" onclick="copyEmail()" onmouseout="outFunc()">Email me</div>
+		</div>
 		<div class="social">
 			<a class="nav" href="https://www.linkedin.com/in/tushark7/" target="_blank" rel="noopener" title="LinkedIn profile">LinkedIn</a>
 			<a class="nav" href="https://www.behance.net/tushark7" target="_blank" rel="noopener" title="Behance portfolio">Behance</a>
@@ -125,47 +128,75 @@
 	<!-- Modals -->
 	<div class="modal" id="modal-is">
 		<div class="proj-full">
-			<img class="proj-cover" src="images/cover-is.png" alt="Internshala">
+			<img class="proj-cover" src="images/cover-pay1.png" alt="Pay1">
 			<section>
-				<a class="fab close-proj" data-modal="modal-is" href="#proj-is"><img src="images/x.svg" alt="Close icon"></a>
+				<a class="fab close-proj" data-modal="modal-is" href="#proj-p1"><img src="images/x.svg" alt="Close icon"></a>
 				<div class="proj-title">
-					<h5>Internshala</h5>
-					<h3>Improving how students find &amp; apply to internships with a better experience</h3>
+					<h5>Pay1</h5>
+					<h3>Making digital payments easier and profitable for retailers</h3>
 				</div>
-				<p><a class="link" href="https://internshala.com/" target="_blank" rel="noopener" title="Internshala - Website">Internshala</a> is the largest internships &amp; training platform in India, which helps students get internships in various profiles and locations. It connects 6 million+ students with 100 thousand+ companies / startups.</p>
-				<p>As a UI/UX Design intern, I worked with the lead designer, engineers, product managers, and other designers. We built the <b>Internshala design system</b> and redesigned the <b>Android app</b>, to help students with their <b>internship search experience</b>.</p>
+				<h4>Overview</h4>
+				<p><a class="link" href="https://www.pay1.in/" target="_blank" rel="noopener" title="Pay1 - Website">Pay1</a> focuses on providing digital payment platform for the businesses in the unorganized retail sector of India, and help them expand and scale better while achieving financial empowerment.</p>
+				<p>As a UX Design intern, I worked with the design team and development team. We created the <b>Pay1 Design System</b>, inspired from Material Design. I also led the design of the user reward system in the Distributor app of Pay1, but I cannot delve into the details of the module due to NDA.</p>
+				
 				<h4>Building a design system</h4>
-				<p>We designed an inclusive system that defines digital experiences, consistency and identity for Internshala. Based on <a class="link" href="https://atomicdesign.bradfrost.com/" target="_blank" rel="noopener" title="Atomic Design - Brad Frost">Brad Frost’s Atomic Design</a>, we built a comprehensive style guide &amp; component library.</p>
-				<p>The design system would be implemented to all products from Internshala, including trainings and a new job platform. It helped the whole team by making visual design <b>consistent and scalable</b> and developing new features faster.</p>
-				<img class="proj-img" src="images/img-is01.png" alt="Internshala - Design System">
-				<h4>Redesigning the Internshala app</h4>
-				<p>I designed the complete end-to-end experience for the <a class="link" href="https://play.google.com/store/apps/details?id=com.internshala.app&hl=en_IN" target="_blank" rel="noopener" title="Internshala App - Play Store">Internshala app</a>, based on the new design system. It was focused on clear information, intuitive interactions and unified experience.</p>
-				<p>Also, I collaborated with engineers for developer hand-offs &amp; finalizing. I conducted a sample user testing with a group of students to identify opportunities and validate the solution.</p>
-				<img class="proj-img" src="images/img-is02.png" alt="Internshala - Android App">
+				<p>As Pay1 had multiple apps, each for different audience and with different features, there was a need to have a design system and component library which represents the values of the company and provides a unified ecosystem for the apps. So this was one of the tasks which I started with when I joined the company. The work was already started by the existing design team a little before I joined and I was tasked with creating the typography, few components and contribute to the color palette, which you can see below.</p>
+				<p>When I started working on the design system, user research had been conducted, where we got the answers to questions related to the customer experience, usability, intuitive nature of the apps, and cohesive nature of the apps. That gave us a solid platform to work on. We drew inspiration from Material Design principles and got to work.</p>
+				<img class="proj-img" src="images/img-pay101.png" alt="Design System p1">
+				
+				<h4>Components</h4>
+				<p>The design team conducted a meeting with the developers, product managers and stakeholders to understand the parts of the apps we had and prioritize which parts needed to be a common component and get their ideas on the design system. The decisions were made based on user data collected from the app and user interviews conducted.</p>
+				<p>After we decided on the components, I started designing the Dialog boxes, Overlays, Cards, Lists and Buttons used in the apps. Idea was to keep the UI simple and make it accessible as the target audience is a largely uneducated or less exposed to the smartphone culture. This drove the developement of the design system as a whole, while striving for a more organized foundation based on which designs can be made for Pay1.</p>
+				
+				<h4>Results</h4>
+				<img class="proj-img" src="images/img-pay102.png" alt="Design System p2">
+				<img class="proj-img" src="images/img-pay103.png" alt="Design System p3">
+				<h4>Learnings</h4>
+				<p>Despite the short time spent with the team, I gained experience with the process of creating a unified design system, performing user research, user journey mapping, and usability testing. This internship gave me the chance to work as a pure designer and the opportunity to be a part of the product thinking process. The experience working as a developer helped me get my points and design decisions across the developer team.</p>
 			</section>
 		</div>
 	</div>
 
 	<div class="modal" id="modal-dyt">
 	<div class="proj-full">
-		<img class="proj-cover" src="images/cover-dyt.png" alt="Do Your Thng">
+		<img class="proj-cover" src="images/cover-gf.png" alt="Do Your Thng">
 		<section>
-			<a class="fab close-proj" data-modal="modal-dyt" href="#proj-dyt"><img src="images/x.svg" alt="Close icon"></a>
+			<a class="fab close-proj" data-modal="modal-dyt" href="#proj-gf"><img src="images/x.svg" alt="Close icon"></a>
 			<div class="proj-title">
-				<h5>Do Your Thng</h5>
-				<h3>Engaging &amp; educating young users to earn from their social media</h3>
+				<h5>GroupFit</h5>
+				<h3>Promote a collaborative way of keeping yourself fit and healthy</h3>
 			</div>
-			<p><a class="link" href="https://doyourthng.com/" target="_blank" rel="noopener" title="Do Your Thng - Website">Do Your Thng</a> is a shared economy platform for digital profiles. It helps social media users to support and promote the initiatives they love to get rewarded in return.</p>
-			<p>As a product design intern, I redesigned the app to <b>boost user engagement</b>, establish identity, <a class="link" href="https://www.toptal.com/designers/ui/gamification-design" target="_blank" rel="noopener" title="Gamification Design - Stian Sandsgaard">incentivise rewards</a> and create clarity through interface. I worked remotely in regular collaboration with a product manager and a designer.</p>
-			<h4>Setting the tone with a styleguide</h4>
-			<p>I developed a visual language and styleguide to make designing layouts faster and more coherent. With this, we were able to define constraints and take a lean approach.</p>
-			<img class="proj-img" src="images/img-dyt01.png" alt="Do Your Thng - Design System">
-			<h4>Designing delightful interfaces</h4>
+			<h4>Overview</h4>
+			<p>GroupFit is an app solution for an 8 hour long hackathon, upon which I worked and have since expanded the design based on my inital ideas for the app features.</p>
+			
+			<h4>Problem</h4>
+			<p>Maintaining fitness with a busy work schedule, especially with the pandemic, is tough. While some are successful in managing time and do activities which help keep them fit, some struggle to get into a routine. There are a lot of apps which provide fitness solutions to the users, but often rely on the user to be accountable for themselves which makes it easy for possible break in the routine to maintain fitness. So a solution is needed to help keep the user motivated to keep a daily routine and provide some support with their efforts.</p>
+
+			<h4>Solution</h4>
+			<p>An easy to use app which provides the user to form groups with friends and people with similar interests and particiapte in group activities based on each person's schedule, thereby promoting collaboration among the users with respect to fitness.</p>
+
+			<h4>Research</h4>
+			<p>Due to the very short time, I could only conduct interviews with 2 people. Following are the findings:</p>
+			<ul>
+				<li>Scheduling time for exercise is tough due to multiple high priority commitments throughout the day.</li>
+				<li>Having friends and others performing the same activity as the user gives them motivation to do the activity themselves.</li>
+				<li>Ability to know what's happening around the user with respect to fitness activites is useful and helps in engaging with new people.</li>
+				<li>Less complicated app will be helpful.</li>
+			</ul>
+			
+			<!-- <h4>Designing delightful interfaces</h4>
 			<p>I designed information architecture and high-fidelity prototypes for the app. I updated the user flow for a transparent system structure which was easily recognisable.</p>
-			<img class="proj-img" src="images/img-dyt02.png" alt="Do Your Thng - User flow">
-			<p>I designed high-fidelity prototypes for onboarding, account, login/signup, and a new digest section. The redesigned app increased the conversation rates by 16%, which helped bring in more campaigns and initiatives onboard.</p>
-			<p>Later, I worked on admin dashboards for brands &amp; campaign creators. Designed information architecture and wireframes through for better tracking &amp; managing experience.</p>
-			<img class="proj-img" src="images/img-dyt03.png" alt="Do Your Thng - iOS App">
+			<img class="proj-img" src="images/img-dyt02.png" alt="Do Your Thng - User flow"> -->
+
+			<h4>High-fidelity Wireframes</h4>
+			<img class="proj-img" src="images/img-gf02.png" alt="GroupFit - 1">
+			<img class="proj-img" src="images/img-gf03.png" alt="GroupFit - 2">
+			
+			<h4>Prototype</h4>
+			<div style="display: flex; justify-content: center; width: 100%;"><iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="500" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FghBzhKgntMDm8oEbFGYj3i%2FDesign%3Fpage-id%3D0%253A1%26node-id%3D6%253A48%26viewport%3D241%252C48%252C0.23%26scaling%3Dscale-down%26starting-point-node-id%3D6%253A48" allowfullscreen></iframe></div>
+
+			<h4>Learnings</h4>
+			<p>This project helped me improve my skills in prototyping and design thinking. Due to the very short time, it was a challenge to be able to implement most of my ideas, conduct a more thorough user research and conduct user testing. On the other hand, I was able to experiment with my visual design and try interactions which isn't common practice in most apps.</p>
 		</section>
 	</div>
 	</div>

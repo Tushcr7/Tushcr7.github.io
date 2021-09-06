@@ -42,8 +42,8 @@ html {
 	--accent: #1cac40;
 	--is: #EC1A3B;
 	--dyt: #17B890;
-	--ncs: #FA820A;
-	--cryp: #3B55A5;
+	--ncs: #00C9EF;
+	--cryp: #000000;
 	scroll-behavior: smooth;
 }
 
@@ -417,22 +417,22 @@ section {
 		box-shadow: 0 8px 32px 0 rgba(23, 184, 144, 0.6);
 	}
 
-#proj-ncs {
-	background: url(../images/img-ncs.png) var(--ncs) no-repeat;
+#proj-ar {
+	background: url(../images/img-ar.png) var(--ncs) no-repeat;
 	background-size: cover;
-	box-shadow: 0 8px 24px 0 rgba(255, 147, 20, 0.4);
+	box-shadow: 0 8px 24px 0 rgba(0, 201, 239, 0.4);
 }
-	#proj-ncs:hover {
-		box-shadow: 0 8px 32px 0 rgba(255, 147, 20, 0.6);
+	#proj-ar:hover {
+		box-shadow: 0 8px 32px 0 rgba(0, 201, 239, 0.6);
 	}
 
-#proj-cryp {
-	background: url(../images/img-cryp.png) var(--cryp) no-repeat;
+#proj-de {
+	background: url(../images/img-de.png) var(--cryp) no-repeat;
 	background-size: cover;
-	box-shadow: 0 8px 24px 0 rgba(59, 85, 165, 0.4);
+	box-shadow: 0 8px 24px 0 rgba(0, 0, 0, 0.4);
 }
-	#proj-cryp:hover {
-		box-shadow: 0 8px 32px 0 rgba(59, 85, 165, 0.6);
+	#proj-de:hover {
+		box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.6);
 	}
 
 /* About section */
@@ -624,7 +624,7 @@ section {
 	border-bottom: 1px dotted var(--ncs);
 }
 	#modal-ncs a.link:hover {
-		box-shadow: inset 0 -0.4em 0 rgba(250, 110, 10, 0.32);
+		box-shadow: inset 0 -0.4em 0 rgba(0, 201, 239, 0.32);
 	}
 
 #modal-cryp a.link {
@@ -632,7 +632,7 @@ section {
 	border-bottom: 1px dotted var(--cryp);
 }
 	#modal-cryp a.link:hover {
-		box-shadow: inset 0 -0.4em 0 rgba(59, 85, 165, 0.32);
+		box-shadow: inset 0 -0.4em 0 rgba(0, 0, 0, 0.32);
 	}
 
 .tooltip {

@@ -213,6 +213,13 @@ a.link {
 	}
 }
 
+ul li {
+	font-size: 1rem; 
+	line-height: 1.6; 
+	margin: 0.4em auto; 
+	letter-spacing: -0.1px;
+}
+
 /* Navigation bar */
 nav {
 	padding: 1.25rem 5rem;

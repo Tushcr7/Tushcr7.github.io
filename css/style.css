@@ -581,6 +581,7 @@ section {
 .proj-title {
 	text-align: center;
 	margin: 1rem 0 2rem;
+	width: 100%;
 }
 	.proj-title h3 {
 		line-height: 1.285

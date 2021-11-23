@@ -40,6 +40,7 @@ html {
 	--primary-2: #606066;
 	--secondary: #FFFFFF;
 	--accent: #1cac40;
+	--olx: #007F7C;
 	--is: #EC1A3B;
 	--dyt: #17B890;
 	--ncs: #00C9EF;
@@ -406,6 +407,15 @@ section {
 		color: white;
 	}
 
+#proj-olx {
+	background: url(../images/img-olx.png) var(--olx) no-repeat;
+	background-size: cover;
+	box-shadow: 0 8px 24px 0 rgba(160, 180, 255, 0.4);
+}
+	#proj-olx:hover {
+		box-shadow: 0 8px 32px 0 rgba(160, 180, 255, 0.6);
+	}
+
 #proj-p1 {
 	background: url(../images/img-pay1.png) var(--is) no-repeat;
 	background-size: cover;
@@ -609,6 +619,14 @@ section {
 			top: 1.6rem;
 			right: 1.6rem;
 		}
+	}
+
+#modal-olx a.link {
+	color: var(--olx);
+	border-bottom: 1px dotted var(--olx);
+}
+	#modal-olx a.link:hover {
+		box-shadow: inset 0 -0.4em 0 rgba(236, 26, 59, 0.32);
 	}
 
 #modal-is a.link {

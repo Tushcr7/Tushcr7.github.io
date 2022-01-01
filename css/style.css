@@ -41,6 +41,7 @@ html {
 	--secondary: #FFFFFF;
 	--accent: #1cac40;
 	--olx: #007F7C;
+	--sh: #f27d40;
 	--is: #EC1A3B;
 	--dyt: #17B890;
 	--ncs: #00C9EF;
@@ -407,6 +408,15 @@ section {
 		color: white;
 	}
 
+#proj-sh {
+	background: url(../images/img-sh.png) var(--sh) no-repeat;
+	background-size: cover;
+	box-shadow: 0 8px 24px 0 rgba(242, 125, 64, 0.4);
+}
+	#proj-sh:hover {
+		box-shadow: 0 8px 32px 0 rgba(242, 125, 64, 0.6);
+	}
+
 #proj-olx {
 	background: url(../images/img-olx.png) var(--olx) no-repeat;
 	background-size: cover;
@@ -621,12 +631,20 @@ section {
 		}
 	}
 
+#modal-sh a.link {
+	color: var(--sh);
+	border-bottom: 1px dotted var(--sh);
+}
+	#modal-sh a.link:hover {
+		box-shadow: inset 0 -0.4em 0 rgba(242, 125, 64, 0.32);
+	}
+
 #modal-olx a.link {
 	color: var(--olx);
 	border-bottom: 1px dotted var(--olx);
 }
 	#modal-olx a.link:hover {
-		box-shadow: inset 0 -0.4em 0 rgba(236, 26, 59, 0.32);
+		box-shadow: inset 0 -0.4em 0 rgba(160, 180, 255, 0.32);
 	}
 
 #modal-is a.link {

@@ -80,9 +80,14 @@
 		<h2 class="heading">Work</h2>
 
 		<div class="proj-container">
+			<a href="#" data-modal="modal-sh" alt="SmartHome" class="proj-box" id="proj-sh">
+				<h3>SmartHome</h3>
+				<h5>Product Design · School Project</h5>
+			</a>
+			
 			<a href="#" data-modal="modal-olx" alt="OLX Redesign" class="proj-box" id="proj-olx">
 				<h3>OLX Redesign</h3>
-				<h5>UX Design · Design System</h5>
+				<h5>UX Design · School Project</h5>
 			</a>
 
 			<a href="#" data-modal="modal-is" alt="Pay1" class="proj-box" id="proj-p1">
@@ -137,15 +142,77 @@
 	</div>
 
 	<!-- Modals -->
+	<div class="modal" id="modal-sh">
+		<div class="proj-full">
+			<img class="proj-cover" src="images/cover-sh.png" alt="SmartHome Cover Image">
+			<section>
+				<a class="fab close-proj" data-modal="modal-sh" href="#proj-sh"><img src="images/x.svg" alt="Close icon"></a>
+				<div class="proj-title">
+					<h5>SmartHome</h5>
+					<h3>App to manage smart devices and appliances at home</h3>
+					<h5>Roles: UX Design & UX Research</h5>
+				</div>
+				<h4>Overview</h4>
+				<p>As a part of the course project, I decided to create a smart home app. The aim of the app was to help the user to <strong>manage</strong> most, if not all, the <strong>smart devices</strong> available and in use to them at their home.
+					Along with that, I wanted to give the user the option to create "scenes" or automations to further enhance their experience of using the smart devices.
+				</p>
+
+				<h4>Problem</h4>
+				<p>Smart device users need a way to manage and control multiple smart home devices conveniently with their mobile phones.</p>
+
+				<h4>Research</h4>
+				<p>I interviewed 2 users for this project. One user owns multiple smart devices and the other owns only one smart device but plans to get more for their home. Questions were largely related to their experience using apps to control 
+					the devices they own. From the interviews, I found following issues come up:</p>
+				<ul>
+					<li>Devices in a single page or room are pretty scattered and not organized.</li>
+					<li>Inability to control level of access for users other than the owner of the devices.</li>
+					<li>Preference for a more minimal design compared to SmartThings.</li>
+				</ul>
+				<p>Based on the interview outcomes and further study of the main competitors in this category, namely Apple Home, Google Nest, and Samsung SmartThings, I decided to focus on the following features:</p>
+				<ul>
+					<li>Device interactions: The usual interactions which involve turning a device on or off, tweaking the device settings (for eg. altering thermostat temperature), and as such.</li>
+					<li>Adding devices and users.</li>
+					<li>Creating automations involving multiple devices.</li>
+				</ul>
+
+				<h4>Information Architecture</h4>
+				<img class="proj-img" src="images/img-sh-ia.png" alt="SmartHome Information Architecture">
+				
+				<h4>Initial Sketches</h4>
+				<img class="proj-img" src="images/img-sh-sketches.png" alt="SmartHome Initial Sketches">
+
+				<h4>Towards Final Design</h4>
+				<img class="proj-img" src="images/img-sh-home.png" alt="SmartHome Home Screen">
+				<img class="proj-img" src="images/img-sh-room.png" alt="SmartHome Rooms Screen">
+				<img class="proj-img" src="images/img-sh-scenes.png" alt="SmartHome Scenes Screen">
+				<img class="proj-img" src="images/img-sh-add.png" alt="SmartHome Adding a Device">
+
+				<h4>Prototype</h4>
+				<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="500" 
+				src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FECpHVJrRv2Bvm01DMWHSH5%2FTushar-(Copy)%3Fpage-id%3D1%253A45%26node-id%3D75%253A123%26viewport%3D241%252C48%252C0.28%26scaling%3Dscale-down%26starting-point-node-id%3D75%253A123" allowfullscreen></iframe>
+
+				<h4>What Next?</h4>
+				<ul>
+					<li>Need to exapnd more on each device's interaction through their respective settings page.</li>
+					<li>Need to make the app more accessible.</li>
+					<li>Perform proper user testing.</li>
+				</ul>
+
+				<h4>Learnings</h4>
+				<p>This project presented me with the opportunity to work on an idea from start to finish and create a complete app. My prior experience in design was strictly focused on one or two screens or one particular feature of an existing app. But thanks to this project, I got a good grip on how to bring an idea for a complete app into reality.</p>
+			</section>
+		</div>
+	</div>
+	
 	<div class="modal" id="modal-olx">
 		<div class="proj-full">
-			<img class="proj-cover" src="images/cover-olx.png" alt="SmartHome">
+			<img class="proj-cover" src="images/cover-olx.png" alt="OLX Redesign">
 			<section>
 				<a class="fab close-proj" data-modal="modal-olx" href="#proj-olx"><img src="images/x.svg" alt="Close icon"></a>
 				<div class="proj-title">
 					<h5>OLX Redesign</h5>
 					<h3>Buy, sell or exchange goods</h3>
-					<h5>Roles: UX Design & UX Research</h5>
+					<h5>Roles: UX Design</h5>
 				</div>
 				<h4>Overview</h4>
 				<p>OLX is a C2C platform for buying, selling or exchanging goods, like electronics, vehicles, appliances, furniture, daily items and so on. 

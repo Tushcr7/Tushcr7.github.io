@@ -5,7 +5,7 @@ var navbar = document.getElementById("right-nav");
 var menubtn = document.getElementById("btn-menu");
 
 function preloader() {
-	timer = setTimeout(showPage, 500);
+	timer = setTimeout(showPage, 250);
 }
 
 function showPage() {

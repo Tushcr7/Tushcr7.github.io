@@ -39,8 +39,8 @@ html {
 	--primary-1: #1A1A1F;
 	--primary-2: #606066;
 	--secondary: #FFFFFF;
-	--accent: #1cac40;
-	--al: #EBF6BA;
+	--accent: #1CAC40;
+	--al: #0B4A73;
 	--olx: #007F7C;
 	--sh: #F27D40;
 	--is: #EC1A3B;
@@ -412,10 +412,10 @@ section {
 #proj-al {
 	background: url(../images/img-al.png) var(--sh) no-repeat;
 	background-size: cover;
-	box-shadow: 0 8px 24px 0 rgba(206, 217, 159, 0.4);
+	box-shadow: 0 8px 24px 0 rgba(13, 60, 91, 0.4);
 }
 		#proj-al:hover {
-			box-shadow: 0 8px 32px 0 rgba(206, 217, 159, 0.6);
+			box-shadow: 0 8px 32px 0 rgba(13, 60, 91, 0.6);
 		}
 
 #proj-sh {

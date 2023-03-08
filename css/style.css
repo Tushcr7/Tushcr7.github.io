@@ -41,6 +41,7 @@ html {
 	--secondary: #FFFFFF;
 	--accent: #1CAC40;
 	--al: #0B4A73;
+	--al1: #FFEED0;
 	--olx: #007F7C;
 	--sh: #F27D40;
 	--is: #EC1A3B;
@@ -193,7 +194,7 @@ a.link {
 }
 
 #container {
-	display: none;
+	display: block;
 	width: 100%;
 	background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.8));
 	animation: fadein 0.8s ease-in;
@@ -310,7 +311,7 @@ nav {
 
 /* All sections */
 section {
-	width: 44vw;
+	width: 52vw;
 	min-width: 30rem;
 	max-width: 80%;
 	margin: 0 auto 12.5rem;
@@ -409,12 +410,21 @@ section {
 		color: white;
 	}
 
-#proj-al {
-	background: url(../images/img-al.png) var(--sh) no-repeat;
+#proj-al1 {
+	background: url(../images/img-al1.png) var(--al) no-repeat;
+	background-size: cover;
+	box-shadow: 0 8px 24px 0 rgba(255, 238, 208, 0.4);
+}
+		#proj-al1:hover {
+			box-shadow: 0 8px 32px 0 rgba(255, 238, 208, 0.6);
+		}
+
+#proj-al2 {
+	background: url(../images/img-al.png) var(--al) no-repeat;
 	background-size: cover;
 	box-shadow: 0 8px 24px 0 rgba(13, 60, 91, 0.4);
 }
-		#proj-al:hover {
+		#proj-al2:hover {
 			box-shadow: 0 8px 32px 0 rgba(13, 60, 91, 0.6);
 		}
 
@@ -590,7 +600,7 @@ section {
 		}
 	}
 	.proj-full section {
-		margin: 0 auto 6rem;
+		margin: 0 auto 4rem;
 		background: var(--secondary);
 		align-items: flex-start;
 		animation: none;
@@ -639,6 +649,22 @@ section {
 			top: 1.6rem;
 			right: 1.6rem;
 		}
+	}
+
+#modal-al1 a.link {
+	color: var(--al);
+	border-bottom: 1px dotted var(--al1);
+}
+	#modal-al1 a.link:hover {
+		box-shadow: inset 0 -0.4em 0 rgba(211, 185, 138, 0.32);
+	}
+
+#modal-al2 a.link {
+	color: var(--al);
+	border-bottom: 1px dotted var(--al);
+}
+	#modal-al2 a.link:hover {
+		box-shadow: inset 0 -0.4em 0 rgba(20, 53, 74, 0.32);
 	}
 
 #modal-sh a.link {

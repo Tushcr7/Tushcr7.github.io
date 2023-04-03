@@ -43,12 +43,14 @@ for (var i = 0; i < btn.length; i++) {
 
 	thisBtn.onclick = function() {
 		var thisModal = document.getElementById(this.dataset.modal);
+		console.log("x", thisModal);
 		thisModal.style.display = "block";
 		container.style.position = "fixed";
 	}
 
 	thisSpan.onclick = function() {
 		var thisModal = document.getElementById(this.dataset.modal);
+		console.log("y", thisModal);
 		thisModal.style.display = "none";
 		container.style.position = "initial";
 	}

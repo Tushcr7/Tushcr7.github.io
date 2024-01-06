@@ -40,6 +40,7 @@ html {
 	--primary-2: #606066;
 	--secondary: #FFFFFF;
 	--accent: #1CAC40;
+	--obr: #449DF2;
 	--al: #0B4A73;
 	--al1: #FFEED0;
 	--olx: #007F7C;
@@ -395,6 +396,7 @@ section {
 	border-radius: 8px;
 	z-index: 1;
 	transition: 0.2s ease-out;
+	align-items: center;
 }
 	@media (max-width: 800px) {
 		.proj-box {
@@ -409,7 +411,17 @@ section {
 
 	.proj-box h3, .proj-box h5 {
 		color: white;
+		width: 90%;
 	}
+
+#proj-obr {
+	background: url(../images/img-obr.png) var(--obr) no-repeat;
+	background-size: cover;
+	box-shadow: 0 8px 24px 0 rgba(255, 238, 208, 0.4);
+}
+		#proj-al1:hover {
+			box-shadow: 0 8px 32px 0 rgba(255, 238, 208, 0.6);
+		}
 
 #proj-al1 {
 	background: url(../images/img-al1.png) var(--al) no-repeat;
@@ -650,6 +662,14 @@ section {
 			top: 1.6rem;
 			right: 1.6rem;
 		}
+	}
+
+#modal-obr a.link {
+	color: var(--obr);
+	border-bottom: 1px dotted var(--obr);
+}
+	#modal-obr a.link:hover {
+		box-shadow: inset 0 -0.4em 0 rgba(211, 185, 138, 0.32);
 	}
 
 #modal-al1 a.link {
